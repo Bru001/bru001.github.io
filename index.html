@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#020204">
+
+    <title>Bruno Sys — Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="space" aria-hidden="true">
+
+        <div class="stars"></div>
+        <div class="stars stars-two"></div>
+
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+
+    </div>
+
+
+    <!-- =====================================================
+         PHONE
+    ====================================================== -->
+
+    <main class="phone-wrapper">
+
+        <div class="phone">
+
+            <!-- SIDE BUTTONS -->
+            <button class="side-button volume-up" type="button" aria-label="Volume up"></button>
+
+            <button class="side-button volume-down" type="button" aria-label="Volume down"></button>
+
+
+            <!-- POWER BUTTON - DESKTOP -->
+
+            <button
+                class="side-button power-button"
+                id="powerButton"
+                type="button"
+                aria-label="Ligar ou desligar telefone">
+            </button>
+
+
+            <!-- =================================================
+                 PHONE FRAME
+            ================================================== -->
+
+            <div class="phone-frame">
+
+                <div class="screen">
+
+
+                    <!-- =================================================
+                         DYNAMIC ISLAND
+                    ================================================== -->
+
+                    <div class="dynamic-island" id="dynamicIsland">
+
+                        <div class="island-sensor"></div>
+
+                        <div class="island-camera"></div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         STATUS BAR - LOCK SCREEN
+                    ================================================== -->
+
+                    <div class="status-bar">
+
+                        <span class="status-time" id="lockStatusTime">
+                            9:41
+                        </span>
+
+                        <div class="status-icons">
+
+                            <!-- Signal -->
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 20h2"></path>
+                                <path d="M8 16h2"></path>
+                                <path d="M12 12h2"></path>
+                                <path d="M16 8h2"></path>
+                            </svg>
+
+
+                            <!-- WiFi -->
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 9c5.5-4.5 10.5-4.5 16 0"></path>
+                                <path d="M7 13c3.5-3 6.5-3 10 0"></path>
+                                <path d="M10 17c1.5-1.2 2.5-1.2 4 0"></path>
+                                <circle
+                                    cx="12"
+                                    cy="20"
+                                    r="1"
+                                    fill="currentColor"
+                                    stroke="none">
+                                </circle>
+                            </svg>
+
+
+                            <!-- Battery -->
+
+                            <div class="battery">
+
+                                <div
+                                    class="battery-level"
+                                    id="batteryLevel">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         SCREEN OFF
+                    ================================================== -->
+
+                    <section class="screen-off" id="screenOff">
+
+                        <!-- POWER CENTRAL - SOMENTE NO MOBILE -->
+
+                        <button
+                            class="mobile-power-button"
+                            id="mobilePowerButton"
+                            type="button"
+                            aria-label="Ligar telefone">
+
+                            <span class="mobile-power-icon">
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                                    <path d="M12 2v10"></path>
+
+                                    <path d="M6.2 5.5a8 8 0 1 0 11.6 0"></path>
+
+                                </svg>
+
+                            </span>
+
+                            <span class="mobile-power-text">
+                                TOQUE PARA LIGAR
+                            </span>
+
+                        </button>
+
+
+                        <!-- TEXTO ORIGINAL - DESKTOP -->
+
+                        <p class="desktop-power-hint">
+                            PRESSIONE POWER PARA LIGAR
+                        </p>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         BOOT SCREEN
+                    ================================================== -->
+
+                    <section class="boot-screen" id="bootScreen">
+
+                        <div class="boot-logo">
+                            BRUNO<span>SYS</span>
+                        </div>
+
+                        <div class="boot-name">
+                            PORTFOLIO SYSTEM
+                        </div>
+
+                        <div class="boot-loader">
+                            <span></span>
+                        </div>
+
+                        <small>
+                            INITIALIZING...
+                        </small>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         LOCK SCREEN
+                    ================================================== -->
+
+                    <section class="lock-screen" id="lockScreen">
+
+                        <div class="lock-content">
+
+                            <div class="lock-date" id="lockDate">
+                                SÁBADO, 5 DE SETEMBRO
+                            </div>
+
+                            <div class="lock-time" id="lockTime">
+                                23:59
+                            </div>
+
+                            <div class="lock-message">
+
+                                <span>✦</span>
+
+                                Bem-vindo ao meu portfólio
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="unlock-button"
+                            id="unlockButton"
+                            type="button">
+
+                            DESLIZE OU CLIQUE PARA DESBLOQUEAR
+
+                            <b>↑</b>
+
+                        </button>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         HOME SCREEN
+                    ================================================== -->
+
+                    <section class="home-screen" id="homeScreen">
+
+                        <!-- =============================================
+                             STATUS BAR - HOME SCREEN
+                        ============================================== -->
+
+                        <div class="status-bar home-status-bar">
+
+                            <span class="status-time" id="homeTime">
+                                9:41
+                            </span>
+
+                            <div class="status-icons">
+
+                                <!-- Signal -->
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 20h2"></path>
+                                    <path d="M8 16h2"></path>
+                                    <path d="M12 12h2"></path>
+                                    <path d="M16 8h2"></path>
+                                </svg>
+
+
+                                <!-- WiFi -->
+
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M4 9c5.5-4.5 10.5-4.5 16 0"></path>
+                                    <path d="M7 13c3.5-3 6.5-3 10 0"></path>
+                                    <path d="M10 17c1.5-1.2 2.5-1.2 4 0"></path>
+                                    <circle
+                                        cx="12"
+                                        cy="20"
+                                        r="1"
+                                        fill="currentColor"
+                                        stroke="none">
+                                    </circle>
+                                </svg>
+
+
+                                <!-- Battery -->
+
+                                <div class="battery">
+
+                                    <div
+                                        class="battery-level"
+                                        id="homeBatteryLevel">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="home-content">
+
+
+                            <!-- GREETING -->
+
+                            <div class="greeting">
+
+                                <span>
+                                    PORTFOLIO SYSTEM
+                                </span>
+
+                                <h1>
+                                    Olá, eu sou
+                                    <span>Bruno.</span>
+                                </h1>
+
+                                <p id="roleText">
+                                    DESENVOLVEDOR FRONT-END
+                                </p>
+
+                            </div>
+
+
+                            <!-- GOOGLE -->
+
+                            <form
+                                class="google-search"
+                                id="googleSearchForm"
+                                autocomplete="off">
+
+                                <div class="div-google-logo">
+
+                                    <img
+                                        class="google-logo"
+                                        src="./image/img_gogle.png">
+
+                                </div>
+
+                                <input
+                                    type="text"
+                                    id="googleSearch"
+                                    placeholder="Pesquisar no Google"
+                                    aria-label="Pesquisar no Google">
+
+                                <button
+                                    class="google-search-button"
+                                    type="submit"
+                                    aria-label="Pesquisar">
+
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true">
+
+                                        <circle
+                                            cx="11"
+                                            cy="11"
+                                            r="6">
+                                        </circle>
+
+                                        <path d="m16 16 5 5"></path>
+
+                                    </svg>
+
+                                </button>
+
+                            </form>
+
+
+                            <!-- APP GRID -->
+
+                            <div class="app-grid">
+
+
+                                <!-- ABOUT -->
+
+                                <button
+                                    class="app"
+                                    data-app="about"
+                                    type="button">
+
+                                    <div class="app-icon about-icon">
+
+                                        <img src="./image/img2.png">
+
+                                    </div>
+
+                                    <span>
+                                        Sobre mim
+                                    </span>
+
+                                </button>
+
+
+                                <!-- PROJECTS -->
+
+                                <button
+                                    class="app"
+                                    data-app="projects"
+                                    type="button">
+
+                                    <div class="app-icon projects-icon">
+
+                                        <img src="./image/img_bloco.png">
+
+                                    </div>
+
+                                    <span>
+                                        Projetos
+                                    </span>
+
+                                </button>
+
+
+                                <!-- SKILLS -->
+
+                                <button
+                                    class="app"
+                                    data-app="skills"
+                                    type="button">
+
+                                    <div class="app-icon skills-icon">
+
+                                        <img src="./image/img_habi.png">
+
+                                    </div>
+
+                                    <span>
+                                        Skills
+                                    </span>
+
+                                </button>
+
+
+                                <!-- EXPERIENCE -->
+
+                                <button
+                                    class="app"
+                                    data-app="experience"
+                                    type="button">
+
+                                    <div class="app-icon experience-icon">
+
+                                        <img src="./image/img_experiencia.png">
+
+                                    </div>
+
+                                    <span>
+                                        Experiência
+                                    </span>
+
+                                </button>
+
+
+                                <!-- CONTACT -->
+
+                                <button
+                                    class="app"
+                                    data-app="contact"
+                                    type="button">
+
+                                    <div class="app-icon contact-icon">
+
+                                        <img src="./image/img_tele.png">
+
+                                    </div>
+
+                                    <span>
+                                        Contato
+                                    </span>
+
+                                </button>
+
+
+                                <!-- GITHUB -->
+
+                                <button
+                                    class="app"
+                                    data-app="github"
+                                    type="button">
+
+                                    <div class="app-icon github-icon">
+
+                                        <img src="./image/img_git1.png">
+
+                                    </div>
+
+                                    <span>
+                                        GitHub
+                                    </span>
+
+                                </button>
+
+
+                                <!-- LINKEDIN -->
+
+                                <button
+                                    class="app"
+                                    data-app="linkedin"
+                                    type="button">
+
+                                    <div class="app-icon linkedin-icon">
+
+                                        <img src="./image/img_link1.png">
+
+                                    </div>
+
+                                    <span>
+                                        LinkedIn
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- HOME INDICATOR -->
+
+                        <div
+                            class="home-indicator"
+                            id="homeIndicator">
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         APP WINDOW
+                    ================================================== -->
+
+                    <section
+                        class="app-window"
+                        id="appWindow">
+
+
+                        <!-- APP STATUS -->
+
+                        <div class="app-status">
+
+                            <span id="appTime">
+                                23:59
+                            </span>
+
+                            <div>
+
+                                <svg viewBox="0 0 24 24">
+
+                                    <path d="M4 20h2"></path>
+
+                                    <path d="M8 16h2"></path>
+
+                                    <path d="M12 12h2"></path>
+
+                                    <path d="M16 8h2"></path>
+
+                                </svg>
+
+                                <svg viewBox="0 0 24 24">
+
+                                    <path d="M4 9c5.5-4.5 10.5-4.5 16 0"></path>
+
+                                    <path d="M7 13c3.5-3 6.5-3 10 0"></path>
+
+                                    <path d="M10 17c1.5-1.2 2.5-1.2 4 0"></path>
+
+                                </svg>
+
+                                <div class="battery">
+
+                                    <div class="battery-level"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- APP HEADER -->
+
+                        <header class="app-header">
+
+                            <button
+                                id="backButton"
+                                type="button"
+                                aria-label="Voltar">
+
+                                <svg viewBox="0 0 24 24">
+
+                                    <path d="m15 18-6-6 6-6"></path>
+
+                                </svg>
+
+                            </button>
+
+                            <h2 id="appTitle">
+                                Aplicativo
+                            </h2>
+
+                            <div class="app-symbol">
+                                ✦
+                            </div>
+
+                        </header>
+
+
+                        <!-- APP BODY -->
+
+                        <div
+                            class="app-body"
+                            id="appBody">
+                        </div>
+
+
+                        <!-- HOME INDICATOR -->
+
+                        <div
+                            class="home-indicator"
+                            id="homeIndicator">
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         OUTSIDE UI - LADO ESQUERDO
+    ====================================================== -->
+
+    <div class="outside-ui">
+
+        <div class="outside-logo">
+
+            <span>✦</span>
+
+            PORTFÓLIO
+
+        </div>
+
+        <p>
+            Bruno R. Nunes
+        </p>
+
+        <p class="outside-role">
+            Front-end & Mobile Developer
+        </p>
+
+        <div class="outside-line"></div>
+
+        <div class="outside-hint">
+
+            POWER
+
+            <span>→</span>
+
+            EXPLORE
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+    <!-- =====================================================
+         POWER CENTRAL - MOBILE
+         
+         O botão central chama o mesmo botão Power original.
+         Assim não precisamos duplicar a lógica do script.js.
+    ====================================================== -->
+
+    <script>
+
+        const mobilePowerButton =
+            document.getElementById("mobilePowerButton");
+
+
+        if (mobilePowerButton) {
+
+            mobilePowerButton.addEventListener(
+                "click",
+                function (event) {
+
+                    event.preventDefault();
+
+                    event.stopPropagation();
+
+
+                    /*
+                     * Só funciona em telas mobile.
+                     */
+
+                    if (
+                        window.matchMedia(
+                            "(max-width: 600px)"
+                        ).matches
+                    ) {
+
+                        const powerButton =
+                            document.getElementById(
+                                "powerButton"
+                            );
+
+
+                        /*
+                         * Aciona o Power original.
+                         * O script.js continua responsável
+                         * pelo boot, desligamento e estados.
+                         */
+
+                        if (powerButton) {
+
+                            powerButton.click();
+
+                        }
+
+                    }
+
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
