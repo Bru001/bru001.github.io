@@ -163,7 +163,7 @@ const apps = {
             </h3>
 
             <p>
-                Front-end & Mobile Developer em formação,
+                Front-end & Mobile Developer,
                 construindo interfaces modernas e
                 experiências digitais com foco em
                 performance, design e usabilidade.
